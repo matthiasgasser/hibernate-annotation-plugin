@@ -1,0 +1,22 @@
+This Plugin is a first catch to automatize the creation of an "Hibernate-Contribution" entry in the manifest.mf for OSGI / Hibernate usage. Inspired of the http://notehive.com/wp/2008/07/23/osgi-hibernate-spring-dm-sample/ example, which forces you to create this entries manually.
+
+
+Example Usage:
+
+<plugin>
+<groupId>com.matthiasgasser</groupId>
+<artifactId>hibernate-annotation-plugin</artifactId>
+<version>1.0.0-SNAPSHOT</version>
+<configuration>
+	<instructions>
+	</instructions>
+</configuration>
+<executions>
+	<execution>
+		<phase>package</phase>
+		<goals>
+			<goal>bundle</goal>
+		</goals>
+	</execution>
+</executions>
+</plugin>
